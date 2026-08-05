@@ -1,18 +1,58 @@
 aid: onapsis
 name: Onapsis
-description: 'Onapsis is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Onapsis is a cybersecurity and compliance company for business-critical
+  applications — SAP, Oracle and Salesforce — headquartered in Boston with offices
+  in Buenos Aires and Heidelberg. The Onapsis Platform delivers vulnerability management
+  (Assess), threat detection and response (Defend), secure SAP development and transport
+  control (Control), continuous compliance (Comply) and an AI-driven Security Advisor,
+  backed by the threat intelligence produced by Onapsis Research Labs. The platform
+  exposes a GraphQL-based public API for third-party integrations, custom reporting
+  and workflow automation, authenticated with a UI-generated API key exchanged for
+  a bearer token; the API is served from each customer''s own Onapsis console rather
+  than from a shared multi-tenant host, and the API reference is published inside the
+  customer portal. Onapsis previewed an MCP Gateway for SAP Security in March 2026
+  to let corporate-sanctioned AI agents invoke platform capabilities and Research Labs
+  threat intelligence.'
+image: https://onapsis.com/wp-content/uploads/Onapsis-Featured-Image.png
 url: https://raw.githubusercontent.com/api-evangelist/onapsis/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
-apis: []
+- Cybersecurity
+- Application Security
+- Vulnerability Management
+- Compliance
+- SAP
+- ERP
+- Threat Detection
+- GraphQL
+- Enterprise Software
+apis:
+- aid: onapsis:platform-graphql
+  name: Onapsis Platform API
+  description: 'GraphQL-based public API for The Onapsis Platform. Introduced with
+    support for Assess (vulnerability and scan results) and preliminary support for
+    Comply, it powers third-party integrations with ticketing and SIEM tooling, custom
+    filtered reporting, and multi-tenant MSSP views. Authentication is an API key
+    generated in the Onapsis console UI, exchanged at POST /api/v1/token for a bearer
+    access token used on subsequent GraphQL requests. The endpoint is served from the
+    customer''s own Onapsis console host, so there is no shared public base URL.'
+  humanURL: https://onapsis.com/blog/new-year-new-api-new-onapsis-api-custom-workflows-integrations/
+  baseURL: https://{onapsis-console-host}/graphql
+  tags:
+  - GraphQL
+  - Vulnerability Management
+  - SAP
+  - Security
+  properties:
+  - type: Authentication
+    url: authentication/onapsis-authentication.yml
+  - type: Conformance
+    url: conformance/onapsis-conformance.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -20,4 +60,45 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://onapsis.com/
+- type: SecondaryMarket
   url: https://forgeglobal.com/onapsis_stock/
+- type: Documentation
+  url: https://onapsis.com/platform/
+- type: Support
+  url: https://onapsis.com/support/
+- type: Blog
+  url: https://onapsis.com/blog/
+- type: BlogRSS
+  url: https://onapsis.com/blog/feed/
+- type: GitHubOrganization
+  url: https://github.com/Onapsis
+- type: Login
+  url: https://onapsis.com/customer-portal/
+- type: TermsOfService
+  url: https://onapsis.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://onapsis.com/privacy-policy/
+- type: Security
+  url: https://onapsis.com/security-vulnerability-reporting-guidelines/
+- type: Compliance
+  url: https://onapsis.com/compliance-resources/
+- type: LLMsTxt
+  url: llms/onapsis-llms.txt
+- type: VulnerabilityDisclosure
+  url: security/onapsis-vulnerability-disclosure.yml
+- type: TrustCenter
+  url: security/onapsis-trust-center.yml
+- type: DomainSecurity
+  url: security/onapsis-domain-security.yml
+- type: ChangeLog
+  url: changelog/onapsis-changelog.yml
+- type: Conformance
+  url: conformance/onapsis-conformance.yml
+- type: Authentication
+  url: authentication/onapsis-authentication.yml
+x-enrichment:
+  date: '2026-08-04'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

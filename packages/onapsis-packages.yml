@@ -1,0 +1,78 @@
+generated: '2026-08-04'
+method: searched
+source: npm, PyPI, RubyGems, NuGet, Packagist, crates.io, Maven Central, github.com/Onapsis
+description: >-
+  Onapsis ships no first-party client library for its GraphQL Platform API. All
+  seven public registries were queried for "onapsis" and returned zero packages,
+  and the Onapsis GitHub organization (16 public repositories) contains security
+  research tooling and scanners rather than API clients. Integration with the
+  Platform API is done directly over GraphQL, or through third-party connectors
+  built by security-data vendors. Recorded as a verified zero — no SDKs pointer
+  is wired in apis.yml.
+packages: []
+registries_searched:
+- registry: npm
+  query: onapsis
+  results: 0
+- registry: pypi
+  query: onapsis
+  results: 0
+- registry: rubygems
+  query: onapsis
+  results: 0
+- registry: nuget
+  query: onapsis
+  results: 0
+- registry: packagist
+  query: onapsis
+  results: 0
+- registry: crates.io
+  query: onapsis
+  results: 0
+- registry: maven-central
+  query: onapsis
+  results: 0
+github_organization:
+  url: https://github.com/Onapsis
+  name: Onapsis Inc.
+  public_repos: 16
+  contact: research@onapsis.com
+  note: >-
+    Open-source security research tooling, not API client libraries. Notable
+    repositories below; none is a client for the Onapsis Platform API.
+  repositories:
+  - name: vulnerability_advisories
+    url: https://github.com/Onapsis/vulnerability_advisories
+    kind: security advisories
+  - name: Onapsis-Mandiant-CVE-2025-31324-Vuln-Compromise-Assessment
+    url: https://github.com/Onapsis/Onapsis-Mandiant-CVE-2025-31324-Vuln-Compromise-Assessment
+    kind: vulnerability and compromise assessment tool
+    language: Python
+  - name: Onapsis_CVE-2025-31324_Scanner_Tools
+    url: https://github.com/Onapsis/Onapsis_CVE-2025-31324_Scanner_Tools
+    kind: scanner
+    language: Python
+  - name: CVE-2020-6287_RECON-scanner
+    url: https://github.com/Onapsis/CVE-2020-6287_RECON-scanner
+    kind: scanner
+    language: Python
+  - name: onapsis_icmad_scanner
+    url: https://github.com/Onapsis/onapsis_icmad_scanner
+    kind: scanner
+    language: Python
+  - name: Onapsis_IOCs_scanner
+    url: https://github.com/Onapsis/Onapsis_IOCs_scanner
+    kind: scanner
+    language: Python
+  - name: PyRFC
+    url: https://github.com/Onapsis/PyRFC
+    kind: fork of the SAP Python RFC connector
+    language: Python
+    official: false
+third_party_connectors:
+- vendor: Brinqa
+  url: https://docs.brinqa.com/docs/connectors/onapsis/
+  note: Documents the Onapsis GraphQL API token exchange and endpoint form.
+- vendor: Axonius
+  url: https://docs.axonius.com/docs/onapsis
+  note: Asset-management adapter for Onapsis.

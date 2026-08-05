@@ -1,0 +1,72 @@
+generated: '2026-08-04'
+method: searched
+source: https://onapsis.com/blog/
+description: >-
+  Onapsis publishes no dated changelog page and no versioned release-notes site
+  on its public surface; detailed release notes live inside the Customer Portal.
+  What is public is a quarterly "what's new / platform release" post on the
+  company blog, which names the shipped capability per product. That series is
+  captured here as the public release record. Recent window only.
+scheme: quarterly platform release posts on the company blog
+versioning: calendar quarters (Q1 2026, Q2 2026 …); no semantic version is published for the platform
+current_release: Q2 2026
+public_release_notes: false
+customer_release_notes: https://onapsis.com/customer-portal/
+entries:
+- version: Q2 2026
+  date: '2026-06-11'
+  url: https://onapsis.com/blog/whats-new-q2-2026-platform-release/
+  breaking: []
+  additions:
+  - product: Control
+    highlight: Findings API — a unified source for exporting Git repository scan data to external analytics tools
+  - product: Defend
+    highlight: SAP Web Dispatcher monitoring to protect network entry points
+  - product: Defend
+    highlight: Rapid Controls phase 3 — one-click compensating controls for misconfigurations
+  - product: Defend
+    highlight: Enhanced anomaly tracking for behavioral pattern trending across landscapes
+  - product: Control
+    highlight: Automated workflow notifications for approvers on transport request submission
+  - product: Control
+    highlight: Test Case Category column in the Eclipse plugin (Security, Compliance, Performance, Robustness, Maintainability, Data Loss Prevention)
+  - product: Control
+    highlight: Fine-grained personal access tokens for GitHub discovery with restricted repository access
+  - product: Security Advisor
+    highlight: Long-term performance and backlog trajectory tracking with multi-month visibility
+- version: Q1 2026
+  date: '2026-03-24'
+  url: https://onapsis.com/blog/onapsis-q1-2026-release/
+  breaking: []
+  additions:
+  - product: Assess
+    highlight: Direct baseline policy modification to optimize vulnerability scans
+  - product: Assess
+    highlight: Granular user roles and segmented visibility by SAP asset or business unit
+  - product: Defend
+    highlight: Rapid Controls targeting over-privileged users with real-time monitoring and alerting
+  - product: Defend
+    highlight: Intelligent event tuning to mute lower-priority SAP application log activity
+  - product: Control
+    highlight: SAP cTMS (Cloud Transport Management System) integration for automated security validation
+  - product: Control
+    highlight: Extended transport guard with application security testing for ABAP Cloud code
+- version: September 2025 platform update
+  date: '2025-09-01'
+  url: https://onapsis.com/blog/onapsis-platform-updates-september-2025/
+  date_precision: month
+  breaking: []
+  additions:
+  - product: Assess
+    highlight: SAP Notes Command Center for anticipating SAP patch days and validating applied patches
+  - product: Defend
+    highlight: Rapid Controls for dangerous exploits
+  - product: Defend
+    highlight: Alert on Anything expanded to SAP BTP
+x-evidence:
+- url: https://onapsis.com/blog/whats-new-q2-2026-platform-release/
+  http_status: 200
+- url: https://onapsis.com/blog/onapsis-q1-2026-release/
+  http_status: 200
+- url: https://onapsis.com/blog/onapsis-platform-updates-september-2025/
+  http_status: 200

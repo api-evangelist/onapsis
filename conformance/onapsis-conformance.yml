@@ -1,0 +1,80 @@
+generated: '2026-08-04'
+method: searched
+source: https://onapsis.com/compliance-resources/
+description: >-
+  Cross-cutting standards posture for Onapsis. The API-protocol rows are read
+  from the provider's own API announcement plus third-party connector docs (no
+  public spec exists to derive from). The organizational-certification rows are
+  read verbatim from the public compliance-resources page. Anything that could
+  not be verified against a fetched page is recorded as unknown, not as false.
+standards:
+- id: graphql
+  conforms: true
+  evidence: >-
+    Onapsis publishes a GraphQL-based public API (POST /graphql); announced on
+    the provider blog and consumed by third-party connectors.
+  source: https://onapsis.com/blog/new-year-new-api-new-onapsis-api-custom-workflows-integrations/
+- id: bearer-token-rfc6750
+  conforms: true
+  evidence: 'API key exchanged at POST /api/v1/token for an Authorization: Bearer access token.'
+  source: https://docs.brinqa.com/docs/connectors/onapsis/
+- id: oauth2
+  conforms: false
+  evidence: >-
+    No OAuth 2.0 authorization server is published; authentication is a
+    UI-generated API key exchanged for a bearer token. No
+    /.well-known/oauth-authorization-server (404).
+- id: oidc
+  conforms: false
+  evidence: No /.well-known/openid-configuration on onapsis.com (404).
+- id: openapi
+  conforms: false
+  evidence: No OpenAPI/Swagger document found on any Onapsis host; /openapi.json and /swagger.json both 404.
+- id: rfc9457-problem-details
+  conforms: unknown
+  evidence: No public spec or error reference to verify against.
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returns 404, though a vulnerability reporting policy is published at a non-standard path.
+- id: mcp
+  conforms: partial
+  evidence: >-
+    An MCP Gateway for SAP Security was announced in March 2026 and previewed at
+    SAPinsider and RSA Conference 2026; no public endpoint is reachable and no
+    tools/list manifest could be retrieved.
+  source: https://onapsis.com/press-releases/onapsis-unveils-capabilities-to-unlock-agentic-ai-sap-cybersecurity-workflows/
+- id: llms-txt
+  conforms: true
+  evidence: https://onapsis.com/llms.txt returns 200 with a well-formed llms.txt document.
+- id: a2a
+  conforms: false
+  evidence: /.well-known/agent-card.json and /.well-known/agent.json both 404.
+certifications:
+- id: iso-27001-2022
+  conforms: true
+  evidence: 'ISO/IEC 27001:2022 certified since 2019; Certipedia mark 9108653165.'
+  source: https://onapsis.com/compliance-resources/
+- id: iso-20243-2023
+  conforms: true
+  evidence: O-TTPS / ISO 20243:2023 certification from The Open Group for The Onapsis Platform.
+  source: https://onapsis.com/compliance-resources/
+- id: soc1-type2
+  conforms: true
+  evidence: AICPA SOC 1 Type II attestation; report on request.
+  source: https://onapsis.com/compliance-resources/
+- id: soc2-type2
+  conforms: true
+  evidence: AICPA SOC 2 Type II attestation; report on request.
+  source: https://onapsis.com/compliance-resources/
+- id: tisax-al3
+  conforms: true
+  evidence: 'TISAX Level 3, Germany region; ENX Portal ID S3T76N, assessment ATZW9P-3.'
+  source: https://onapsis.com/compliance-resources/
+- id: eu-us-data-privacy-framework
+  conforms: true
+  evidence: Self-assessment certification under the EU-US Data Privacy Framework.
+  source: https://onapsis.com/compliance-resources/
+- id: veracode-verified
+  conforms: true
+  evidence: Veracode Verified Program participant since 2020.
+  source: https://onapsis.com/compliance-resources/

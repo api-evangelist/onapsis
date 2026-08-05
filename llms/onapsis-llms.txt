@@ -1,0 +1,49 @@
+# Onapsis
+> Onapsis is the pioneer in cybersecurity and compliance solutions for cloud, hybrid, and on-premise business-critical applications. As the proven market leader and an SAP-endorsed partner, the Onapsis Platform delivers vulnerability management, threat detection and response, change assurance, and continuous compliance for applications from vendors like SAP, Oracle, and Salesforce.
+
+## Homepage
+- [Onapsis Homepage](https://onapsis.com/): The central hub for Onapsis, providing a comprehensive overview of our mission to secure business-critical applications like SAP and Oracle.
+
+## The Onapsis Platform
+- [The Onapsis Platform](https://onapsis.com/platform/): High-level overview of the entire Onapsis Platform and how it offers unified visibility, security, and compliance.
+- [Onapsis Assess](https://onapsis.com/platform/assess/): Details how Onapsis Assess helps organizations discover, analyze, and prioritize vulnerabilities across their SAP application landscape.
+- [Onapsis Defend](https://onapsis.com/platform/defend/): Presents Onapsis Defend, an early warning system for continuous monitoring and threat detection for SAP systems.
+- [Onapsis Control](https://onapsis.com/platform/control/): Highlights Onapsis Control, which automates security within the SAP software development lifecycle (SDLC).
+- [Onapsis for SAP BTP Security](https://onapsis.com/platform/sap-btp-security/): Showcases our solution for managing the cybersecurity and compliance risks of custom development in SAP BTP.
+- [Onapsis Assess for SAP BTP](https://onapsis.com/platform/assess/sap-btp/): Enforce security best practices for SAP BTP users, privileges, and configurations, and evaluate BTP and Cloud Connector security posture.
+- [Onapsis Control for SAP BTP](https://onapsis.com/platform/control/sap-btp/): Automated code security testing to scan code for security and integrity issues during development for SAP BTP.
+- [Onapsis Defend for SAP BTP](https://onapsis.com/platform/defend/sap-btp/): Provides real-time alerts for critical configuration changes and incorrect or over-privileged role assignments in SAP BTP.
+- [Onapsis for SAP SuccessFactors](https://onapsis.com/platform/assess/sap-successfactors/): Details features for SAP SuccessFactors, providing visibility into risks to protect sensitive employee data.
+- [Onapsis Security Advisor](https://onapsis.com/platform/security-advisor/): Presents the AI-powered tool that gives a 360° view of an organization’s security posture and provides actionable recommendations.
+
+## SAP Security Solutions
+- [Onapsis for SAP](https://onapsis.com/onapsis-for-sap/): A central hub for all Onapsis solutions specifically designed for SAP, outlining comprehensive protection capabilities.
+- [Vulnerability Management](https://onapsis.com/solutions/vulnerability-management/): Details our solution for discovering, prioritizing, and remediating security weaknesses in SAP systems.
+- [Threat Detection & Response](https://onapsis.com/solutions/threat-detection-response/): Describes our solution for real-time threat detection and response in SAP environments.
+- [Strengthen DevSecOps](https://onapsis.com/solutions/strengthen-devsecops/): Explains our solution for integrating automated security checks seamlessly into the SAP development lifecycle.
+- [Automated Compliance](https://onapsis.com/solutions/achieve-automated-compliance/): Describes our solution for achieving and maintaining automated compliance for SAP systems (e.g., SOX, GDPR).
+- [Secure Cloud Migration & Operation](https://onapsis.com/solutions/secure-cloud-migration-operation/): Explains how Onapsis secures the entire cloud transformation journey for business-critical applications.
+- [Cyber Resilience for RISE with SAP](https://onapsis.com/solutions/building-cyber-resilience-for-rise-with-sap/): Focuses on the security challenges of RISE with SAP, clarifying shared responsibilities and securing custom code.
+- [Accelerate SAP S/4HANA Transformations](https://onapsis.com/solutions/accelerate-sap-s4hana-transformations/): Details our role in accelerating and securing SAP S/4HANA transformation projects.
+
+## Industry Solutions
+- [Utilities](https://onapsis.com/solutions/utilities/): Tailored solutions for the utilities sector, addressing NERC CIP compliance and OT integrations.
+- [Energy](https://onapsis.com/solutions/energy/): Cybersecurity for the energy sector (oil and gas), protecting sensitive data and operational continuity.
+- [Financial Services](https://onapsis.com/solutions/financial-services/): Solutions for financial services, focusing on data protection and regulatory compliance (SOX, GDPR).
+- [Government](https://onapsis.com/solutions/government/): Cybersecurity solutions for public sector organizations, protecting citizen data and meeting federal compliance standards.
+- [Healthcare](https://onapsis.com/solutions/healthcare/): Solutions for healthcare, helping protect Protected Health Information (PHI) and ensure HIPAA compliance.
+- [Manufacturing](https://onapsis.com/solutions/manufacturing/): Solutions for manufacturing, securing IT/OT convergence, protecting IP, and ensuring supply chain resilience.
+- [Pharmaceuticals](https://onapsis.com/solutions/pharmaceuticals/): Needs for the pharmaceutical industry, including securing IP and ensuring GxP compliance.
+- [Retail](https://onapsis.com/solutions/retail/): Solutions for retail, focusing on protecting customer data and ensuring PCI DSS compliance.
+- [Food & Beverage Manufacturing](https://onapsis.com/solutions/food-beverage-manufacturing/): Solutions for food and beverage, protecting formulations and ensuring supply chain integrity.
+- [Industrial Chemicals](https://onapsis.com/solutions/industrial-chemicals/): Cybersecurity for the industrial chemicals industry, protecting proprietary formulas and securing IT/OT systems.
+- [Personal Care Manufacturing](https://onapsis.com/solutions/personal-care-manufacturing/): Solutions for personal care and CPG, protecting brand reputation and securing IP.
+
+## Authoritative Content & Research
+- [Onapsis Research Labs](https://onapsis.com/threat-research/onapsis-research-labs/): The source of our industry-leading threat intelligence on vulnerabilities and threats affecting SAP and Oracle.
+- [What is SAP Security?](https://onapsis.com/blog/what-is-sap-security/): A foundational, introductory guide explaining the core concepts of SAP security.
+- [What is ERP Security?](https://onapsis.com/blog/what-erp-security/): Explains the broader concept of ERP security, its significance, and core protection principles.
+- [SAP Cloud Security Guide](https://onapsis.com/articles/what-is-sap-cloud-security-and-protecting-your-business-from-the-cloud/): A pillar article defining SAP cloud security and the shared responsibility model.
+- [The SAP Shared Responsibility Model](https://onapsis.com/articles/sap-shared-responsibility-model-cloud-security/): A foundational article explaining the division of security tasks between the cloud service provider and the customer.
+- [RISE with SAP Explained](https://onapsis.com/articles/rise-with-sap-the-future-of-business-transformation/): A pillar article that explains SAP's "RISE with SAP" offering and its components.
+- [SAP GRC Ultimate Guide](https://onapsis.com/articles/sap-grc-ultimate-guide/): A comprehensive pillar guide to SAP Governance, Risk, and Compliance (GRC).

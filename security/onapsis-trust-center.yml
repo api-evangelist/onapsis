@@ -1,0 +1,55 @@
+generated: '2026-08-04'
+method: searched
+probe: true
+source: https://onapsis.com/compliance-resources/
+url: https://onapsis.com/compliance-resources/
+description: >-
+  Onapsis publishes its certification and attestation posture on a public
+  "Compliance Resources" page rather than a trust.<domain> subdomain, which is
+  why the automated trust-center probe recorded nothing (trust.onapsis.com has
+  no DNS record). The page names each certification, its scope, and how the
+  underlying report is obtained. Audit reports themselves are customer-gated
+  and released on request.
+certifications:
+- name: ISO/IEC 27001:2022
+  since: 2019
+  scope: The Onapsis Platform and Onapsis Cloud Platform — software development, client implementation, customer experience
+  availability: reports available to Onapsis customers on request
+  verification: https://www.certipedia.com/quality_marks/9108653165?locale=en
+- name: O-TTPS (ISO/IEC 20243:2023)
+  body: The Open Group
+  scope: The Onapsis Platform product lifecycle — design, sourcing, build, fulfillment, distribution, sustainment, disposal
+  note: Supply-chain integrity standard for commercial ICT products
+- name: SOC 1 Type II
+  body: AICPA
+  availability: reports available to Onapsis customers on request
+- name: SOC 2 Type II
+  body: AICPA
+  availability: reports available to Onapsis customers on request
+- name: TISAX AL3
+  scope: Germany region assessment (automotive industry)
+  enx_portal_id: S3T76N
+  assessment_id: ATZW9P-3
+  availability: available to Onapsis customers on request
+- name: EU-US Data Privacy Framework
+  kind: self-assessment certification
+- name: Veracode Verified
+  since: 2020
+  kind: application security program verification
+recognitions:
+- name: SAP Endorsed App
+  note: The Onapsis Platform is listed as an SAP Endorsed App and available in the SAP Store.
+report_access:
+  audit_reports: ISO 27001, SOC 1/SOC 2 Type II and TISAX results are released to Onapsis customers on request.
+  public_pages:
+  - https://onapsis.com/compliance-resources/
+  - https://onapsis.com/quality-policy/
+evidence:
+- source: https://onapsis.com/compliance-resources/
+  kind: compliance/certifications page
+  http_status: 200
+  keywords: [iso 27001, soc 1 type ii, soc 2 type ii, tisax, o-ttps, eu-us data privacy framework, veracode verified]
+- source: https://trust.onapsis.com/
+  kind: trust subdomain probe
+  http_status: null
+  note: no DNS record

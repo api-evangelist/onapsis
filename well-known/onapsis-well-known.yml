@@ -1,0 +1,44 @@
+generated: '2026-08-04'
+method: probed
+source: live GET of the /.well-known/ discovery surface
+host: https://onapsis.com
+note: >-
+  No /.well-known/ document is served. onapsis.com runs WordPress behind
+  Cloudflare and returns a real 404 for every RFC 8615 path probed, including
+  RFC 9116 security.txt — even though Onapsis does publish a vulnerability
+  reporting policy (captured in security/onapsis-vulnerability-disclosure.yml)
+  at a non-standard path. The Onapsis Platform API itself is served from each
+  customer's own console host, which is not publicly reachable, so no API host
+  could be probed. Recorded as absence, not as a gap papered over: no WellKnown
+  pointer is wired in apis.yml because nothing was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+- path: /security.txt
+  status: 404
+spec_probes:
+- path: /openapi.json
+  status: 404
+- path: /swagger.json
+  status: 404
+hosts_without_dns:
+- api.onapsis.com
+- docs.onapsis.com
+- developer.onapsis.com
+- support.onapsis.com
+- help.onapsis.com
+- status.onapsis.com
+- trust.onapsis.com
+- mcp.onapsis.com

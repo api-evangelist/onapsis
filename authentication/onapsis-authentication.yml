@@ -1,0 +1,71 @@
+generated: '2026-08-04'
+method: searched
+source: https://onapsis.com/blog/new-year-new-api-new-onapsis-api-custom-workflows-integrations/
+docs: https://onapsis.com/customer-portal/
+description: >-
+  The Onapsis Platform API is authenticated with an API key generated in the
+  Onapsis console UI, which is exchanged for a short-lived bearer access token
+  used on subsequent GraphQL requests. Onapsis states the key-and-token model on
+  its public API announcement; the exact token endpoint and header forms below
+  are documented publicly by integration vendors that ship Onapsis connectors
+  (Brinqa), not by an Onapsis reference page — the provider's own API reference
+  sits behind the Customer Portal login. Provenance is recorded per field so the
+  provider-published and third-party-documented parts stay distinguishable.
+provider_published: partial
+summary:
+  types: [apiKey, http]
+  api_key_in: [header]
+  http_schemes: [basic, bearer]
+  oauth2_flows: []
+  oauth2: false
+  openid_connect: false
+  mutual_tls: null
+schemes:
+- name: onapsisApiKey
+  type: apiKey
+  in: header
+  parameter_name: Authorization
+  value_form: 'Basic <api_key>'
+  used_for: token exchange only
+  issued_by: Onapsis console UI (API key generation)
+  source_type: third-party-documented
+  sources:
+  - https://docs.brinqa.com/docs/connectors/onapsis/
+- name: onapsisBearer
+  type: http
+  scheme: bearer
+  used_for: all GraphQL API requests
+  source_type: third-party-documented
+  sources:
+  - https://docs.brinqa.com/docs/connectors/onapsis/
+token_exchange:
+  endpoint: POST https://{onapsis-console-host}/api/v1/token
+  request_auth: 'Authorization: Basic <api_key>'
+  response: access token
+  subsequent_auth: 'Authorization: Bearer <access_token>'
+  source_type: third-party-documented
+  source: https://docs.brinqa.com/docs/connectors/onapsis/
+api_surface:
+  protocol: GraphQL
+  path: POST /graphql
+  host_model: per-customer Onapsis console host (no shared multi-tenant API host)
+  products_covered:
+  - Assess (full, at initial release)
+  - Comply (preliminary)
+  source: https://onapsis.com/blog/new-year-new-api-new-onapsis-api-custom-workflows-integrations/
+gaps:
+- The provider publishes no public API reference, no OpenAPI/GraphQL SDL, and no
+  anonymous introspection endpoint; the reference is inside the Customer Portal
+  (Salesforce Community) login.
+- No /.well-known/oauth-authorization-server or /.well-known/openid-configuration
+  is served (both 404), so token lifetime, refresh behavior and scopes could not
+  be verified.
+x-evidence:
+- url: https://onapsis.com/blog/new-year-new-api-new-onapsis-api-custom-workflows-integrations/
+  http_status: 200
+  kind: provider API announcement (GraphQL, API keys, access tokens)
+- url: https://docs.brinqa.com/docs/connectors/onapsis/
+  http_status: 200
+  kind: third-party connector documentation (token endpoint + header forms)
+- url: https://onapsis.com/.well-known/oauth-authorization-server
+  http_status: 404
