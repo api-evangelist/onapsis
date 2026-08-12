@@ -59,6 +59,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: MCPServer
+  url: mcp/onapsis-mcp.yml
 - type: Website
   url: https://onapsis.com/
 - type: SecondaryMarket
