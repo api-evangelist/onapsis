@@ -3,19 +3,15 @@ method: searched
 status: announced
 status_raw: preview
 source: https://onapsis.com/press-releases/onapsis-unveils-capabilities-to-unlock-agentic-ai-sap-cybersecurity-workflows/
-description: >-
-  Onapsis announced "The MCP Gateway for SAP Security" (also referred to as the
-  Onapsis Agentic Gateway) on 17 March 2026 — a Model Context Protocol interface
-  that lets corporate-sanctioned AI agents invoke Onapsis Platform capabilities
-  and cross-reference Onapsis Research Labs threat intelligence. It was shown by
-  private demonstration at SAPinsider 2026 and RSA Conference 2026. No public
-  endpoint, no tools/list manifest, no installation instructions and no
-  documentation URL have been published, and mcp.onapsis.com has no DNS record,
-  so nothing beyond the announcement could be verified. NO tool list is derived
-  here: there is no public OpenAPI to derive one from, and inventing tool names
-  for an announced server would misrepresent the provider. Recorded as
-  announced; no MCPServer pointer is wired in apis.yml until a reachable server
-  or a published manifest exists.
+description: 'Onapsis announced "The MCP Gateway for SAP Security" (also referred to as the Onapsis Agentic
+  Gateway) on 17 March 2026 — a Model Context Protocol interface that lets corporate-sanctioned AI agents
+  invoke Onapsis Platform capabilities and cross-reference Onapsis Research Labs threat intelligence.
+  It was shown by private demonstration at SAPinsider 2026 and RSA Conference 2026. No public endpoint,
+  no tools/list manifest, no installation instructions and no documentation URL have been published, and
+  mcp.onapsis.com has no DNS record, so nothing beyond the announcement could be verified. NO tool list
+  is derived here: there is no public OpenAPI to derive one from, and inventing tool names for an announced
+  server would misrepresent the provider. Recorded as announced; no MCPServer pointer is wired in apis.yml
+  until a reachable server or a published manifest exists.'
 server:
   name: The MCP Gateway for SAP Security
   aliases:
@@ -34,11 +30,11 @@ stated_capabilities:
 - Dynamic discovery and invocation of Onapsis Platform features by an AI agent
 - Cross-referencing findings with Onapsis Research Labs threat intelligence
 - Identifying exposure to zero-day SAP threats
-- 'Example prompt published by Onapsis: "List all the critical open vulnerabilities affecting our core S/4HANA system and draft the remediation plan"'
+- 'Example prompt published by Onapsis: "List all the critical open vulnerabilities affecting our core
+  S/4HANA system and draft the remediation plan"'
 tools: []
-tools_note: >-
-  Unknown. Onapsis has published no tools/list manifest and no tool catalog; the
-  live server is not publicly reachable.
+tools_note: Unknown. Onapsis has published no tools/list manifest and no tool catalog; the live server
+  is not publicly reachable.
 probes:
 - url: https://onapsis.com/press-releases/onapsis-unveils-capabilities-to-unlock-agentic-ai-sap-cybersecurity-workflows/
   http_status: 200
@@ -48,3 +44,8 @@ probes:
   dns: none
 - host: ai.onapsis.com
   dns: none
+deployment:
+  mode: unclear
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
