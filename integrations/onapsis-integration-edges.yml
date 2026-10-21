@@ -4,6 +4,7 @@ checked:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml
 - https://azuremarketplace.microsoft.com/
 - microsoft-sentinel/integrations/microsoft-sentinel-integration-edges.yml
+- eclipse/integrations/eclipse-integration-edges.yml
 marketplace_apps: []
 edges:
 - partner_name: Microsoft Azure Marketplace
@@ -102,6 +103,25 @@ edges:
   category: Security - Threat Protection
   badges:
   - support-tier:partner
+- partner_name: Eclipse Foundation (open-vsx)
+  partner: eclipse
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: open-vsx
+  evidence: https://open-vsx.org/namespace/onapsis
+  mirror_of: eclipse/integrations/eclipse-integration-edges.yml
+  apps:
+  - Onapsis Control for SAP
+  listing_count: 1
+  detected: '2026-10-20'
+  detected_by: mirror-platform-listings.py
+  category: IDE / developer extension marketplace listing
+  badges:
+  - Verified namespace
 source:
 - crowdstrike/integrations/crowdstrike-integration-edges.yml
 - microsoft-sentinel/integrations/microsoft-sentinel-integration-edges.yml
