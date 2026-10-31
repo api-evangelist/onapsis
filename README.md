@@ -64,5 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Onapsis is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/onapsis_stock/
+Onapsis is a cybersecurity and compliance company for business-critical applications — SAP, Oracle and Salesforce — headquartered in Boston with offices in Buenos Aires and Heidelberg. The Onapsis Platform delivers vulnerability management (Assess), threat detection and response (Defend), secure SAP development and transport control (Control), continuous compliance (Comply) and an AI-driven Security Advisor, backed by the threat intelligence produced by Onapsis Research Labs. The platform exposes a GraphQL-based public API for third-party integrations, custom reporting and workflow automation, authenticated with a UI-generated API key exchanged for a bearer token; the API is served from each customer's own Onapsis console rather than from a shared multi-tenant host, and the API reference is published inside the customer portal. Onapsis previewed an MCP Gateway for SAP Security in March 2026 to let corporate-sanctioned AI agents invoke platform capabilities and Research Labs threat intelligence.
+
+**Areas:** Company · Cybersecurity · Application Security · Vulnerability Management · Compliance · SAP · ERP · Threat Detection · GraphQL · Enterprise Software
+
+## Onapsis on APIs.io
+
+Everything profiled for Onapsis is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/onapsis/](https://apis.io/providers/onapsis/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Onapsis Platform API](https://apis.io/apis/onapsis/platform-graphql/) — GraphQL-based public API for The Onapsis Platform. Introduced with support for Assess (vulnerability and scan results) and preliminary support for Comply,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [The MCP Gateway for SAP Security](https://apis.io/servers/onapsis/the-mcp-gateway-for-sap-security/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Onapsis Authentication](https://apis.io/security/onapsis/onapsis-authentication/)
+- [Onapsis Domain Security](https://apis.io/security/onapsis/onapsis-domain-security/)
+- [Onapsis Trust Center](https://apis.io/security/onapsis/onapsis-trust-center/)
+- [Onapsis Vulnerability Disclosure](https://apis.io/security/onapsis/onapsis-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://onapsis.com/)
+- [Documentation](https://onapsis.com/platform/)
+- [Support](https://onapsis.com/support/)
+- [Blog](https://onapsis.com/blog/)
+- [Security](https://onapsis.com/security-vulnerability-reporting-guidelines/)
+- [Compliance](https://onapsis.com/compliance-resources/)
+- [Terms of service](https://onapsis.com/terms-of-use/)
+- [Privacy policy](https://onapsis.com/privacy-policy/)
+- [GitHub](https://github.com/Onapsis)
+
+## API Evangelist rating
+
+**Kin Score 30.5** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 43.4 |
+
+**Agent readiness 6.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 35.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/onapsis/](https://apis.io/providers/onapsis/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Onapsis: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/onapsis/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
